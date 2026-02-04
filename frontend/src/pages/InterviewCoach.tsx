@@ -445,11 +445,6 @@ export function InterviewCoach() {
     return -1;
   }
 
-  function getQuestionForUserMsg(msgIndex: number): string {
-    const aiIdx = getAiMsgIndexForUserMsg(msgIndex);
-    return aiIdx >= 0 ? messages[aiIdx].content : "";
-  }
-
   async function handleGrammarFeedback(msgIndex: number) {
     if (grammarMap[msgIndex] || grammarLoading[msgIndex]) return;
     setGrammarLoading((prev) => ({ ...prev, [msgIndex]: true }));
