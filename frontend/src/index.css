@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  /* Soft gray theme like NotebookLM */
+  --color-bg: #202124;
+  --color-surface: #292A2D;
+  --color-border: #3C3D40;
+  --color-hover: #35363A;
+  --color-text-primary: #E8EAED;
+  --color-text-secondary: #9AA0A6;
+  --color-text-muted: #6B7075;
+  --color-dark: #1A1A1A;
+  --color-green: #34A853;
+  --color-green-bg: #1E3A2F;
+  --color-green-light: #34A85320;
+  --color-yellow: #FBBC04;
+  --color-yellow-light: #FBBC0420;
+  --color-indigo: #8AB4F8;
+  --color-blue: #8AB4F8;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* Phone shake animation for call interface */
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-8deg); }
+  75% { transform: rotate(8deg); }
+}
