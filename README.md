@@ -1,37 +1,57 @@
 # OpenAgentsBox - AI Interview Agent
 
-> **"Commercial AI interview coaching is too expensive, so I built my own."**
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/openagentsbox/interview-agent?style=social)](https://github.com/openagentsbox/interview-agent)
 
-## Philosophy
-Existing interview agents are often overpriced. **OpenAgentsBox** is an open-source alternative.
-By bringing your own API Key, you get professional-grade coaching while maintaining full control over your costs.
+> **"Interview coaching agents on the market are expensive and underwhelming. With AI this accessible, why pay so much?"**
 
-## Key Features
-* **Bring Your Own Key (BYOK)**: Use your own API Key (OpenAI).
-* **Privacy First**: Your Key is stored **only in the frontend**. It is never saved on our backend server.
-* **Full Functionality**: Resume parsing, job description matching, and mock interview sessions are fully implemented.
+## 💡 About This Project
 
+Most interview prep tools charge a premium for basic AI features. This project is my answer to that.
 
+**Built with:**
+- 🎨 **Frontend**: Powered by Claude Code
+- ⚙️ **Backend**: LangGraph + FastAPI
+- 📋 **Prompt Management**: LangSmith (versioning + tracing + evaluation)
+
+**Current Status:** Beta — core features are complete. Focusing on evaluation and optimization.
+
+⭐ **If you find this useful, a star would mean a lot!**
+
+I'm planning to build more agents with the same BYOK (Bring Your Own Key) philosophy. Ideas or feedback? Feel free to reach out!
+
+## 🔑 Key Features
+* **Bring Your Own Key (BYOK)** — Use your own OpenAI API Key
+* **Privacy First** — Key stored only in browser, never touches our server
+* **Full Functionality** — Resume parsing, JD matching, mock interviews
+
+## 📖 How to Use
+
+1. **Enter your OpenAI API Key** — stored only in your browser (never sent to our server)
+2. **Upload your resume (PDF)** — AI parses and extracts your experience
+3. **Add a company + Job Description** — paste the JD you're applying for
+4. **Start mock interview** — practice with AI interviewer
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🎯 **Job Fit Analysis** | AI analyzes how well your resume matches the job description |
+| 🎭 **4 Interview Modes** | Recruiter, Technical, Hiring Manager, Behavioral |
+| 📝 **Grammar Correction** | Real-time grammar feedback on your answers |
+| 📊 **Answer Scoring** | Get scored (1-10) with suggestions for better responses |
+| 🎙️ **Real Interview Mode** | Voice-only mode simulating a real phone interview |
 
 ## ⚠️ Current Status
 * **Prompt Management**: Prompts are currently managed via **LangSmith**.
 * **Local Execution**: Full local execution is not yet supported due to cloud dependencies.
-* **Live Demo**: Please try the application here: [https://openagentsbox.com/interview](https://openagentsbox.com/interview)
+* **Live Demo**: Try it here → [https://openagentsbox.com/interview](https://openagentsbox.com/interview)
+
+> 📝 **Note**: I'm still organizing the LangSmith prompt parameters. Once ready, I'll publish them here.
+> If you're concerned about using my hosted prompts, you can write your own prompts locally and run it yourself.
 
 
 ## 🔮 Future Plans
 I will continue to develop and share more useful AI agents on my website.
 Stay tuned for more tools at [https://openagentsbox.com](https://openagentsbox.com)!
 ---
-
-## 🛠️ Tech Stack (To be updated)
-* **Backend**: 
-* **Frontend**: 
-* **Database**: 
-
-## 📸 Screenshots
-*(Screenshots coming soon)*
-
-## 🚀 Installation
-*(Installation guide coming soon)*
-

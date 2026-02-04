@@ -60,6 +60,11 @@ export function ChatInput({
     }
   }
 
+  // Auto-resize when value changes (e.g., from voice transcription)
+  useEffect(() => {
+    autoResize();
+  }, [value]);
+
   function handleSend() {
     const trimmed = value.trim();
     if (!trimmed || disabled || micState !== "idle") return;
