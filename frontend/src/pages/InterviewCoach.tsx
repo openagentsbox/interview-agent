@@ -345,7 +345,7 @@ export function InterviewCoach() {
           const reader = res.body!.getReader();
           currentReaderRef.current = reader;
           let started = false;
-          const allChunks: Uint8Array[] = [];
+          const allChunks: BlobPart[] = [];
 
           try {
             while (true) {
