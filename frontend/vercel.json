@@ -1,7 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/interview/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/interview", "destination": "/index.html" },
-    { "source": "/interview/:path*", "destination": "/index.html" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/interview(.*)", "dest": "/index.html" },
+    { "src": "/", "status": 301, "headers": { "Location": "/interview" } }
   ]
 }
