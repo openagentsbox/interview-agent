@@ -1,5 +1,7 @@
 {
   "rewrites": [
-    { "source": "/interview/(.*)", "destination": "/interview/index.html" }
+    { "source": "/interview/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/interview", "destination": "/index.html" },
+    { "source": "/interview/:path*", "destination": "/index.html" }
   ]
 }
