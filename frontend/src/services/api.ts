@@ -1,6 +1,8 @@
 import type { ResumeData, Application, Session, InterviewType, SessionMode } from "../types/resume";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = import.meta.env.PROD
+  ? "https://interview-agent-production-1cd9.up.railway.app"
+  : "http://localhost:8000";
 
 const USER_STORAGE_KEY = "jiaf_user_id";
 
